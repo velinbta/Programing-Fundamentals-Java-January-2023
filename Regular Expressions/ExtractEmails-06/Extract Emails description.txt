@@ -24,6 +24,5 @@ Input 2:
 Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information.
 
 Output 2:
-
 s.miller@mit.edu
 j.hopking@york.ac.uk

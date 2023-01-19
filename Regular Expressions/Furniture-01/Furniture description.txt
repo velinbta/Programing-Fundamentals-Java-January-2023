@@ -38,6 +38,7 @@ Input2:
 Purchase	
 
 Output2:
+
 Bought furniture:
 TV
 Monitor
