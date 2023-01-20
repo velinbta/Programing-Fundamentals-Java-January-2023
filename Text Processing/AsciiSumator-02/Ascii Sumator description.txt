@@ -3,7 +3,6 @@ Write a program that prints a sum of all characters between two given characters
 
 Examples:
 
-
 Input 1:
 .
 @
@@ -11,7 +10,6 @@ dsg12gr5653feee5
 
 Output 1:
 363
-
 
 Input 2:
 .
