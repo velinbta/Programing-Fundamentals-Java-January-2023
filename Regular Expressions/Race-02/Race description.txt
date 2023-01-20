@@ -37,11 +37,3 @@ Output 2:
 1st place: Joro
 2nd place: George
 3rd place: Stamat
-
-
-
-
-
-
-
-
