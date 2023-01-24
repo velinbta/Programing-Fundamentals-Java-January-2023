@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class HouseParty_03 {
+public class HouseParty_03_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Ще съхраня гостите, който ще идват в списък
@@ -14,7 +14,7 @@ public class HouseParty_03 {
         List<String> goingGuestsList = new ArrayList<>();
 
         for (int i = 0; i < guests; i++) {
-            // Протичам входа като списък и си взимам от позиция 0 името
+            // Прочитам входа като списък и си взимам от позиция 0 името
             List<String> inputList = Arrays.stream(scanner.nextLine().split("\\s+"))
                     .collect(Collectors.toList());
             String name = inputList.get(0);
