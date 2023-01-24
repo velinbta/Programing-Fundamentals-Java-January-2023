@@ -81,7 +81,7 @@ public class ListOperations_04_2 {
                     } else if (leftOrRight.equals("right")) {
 
                         for (int i = 0; i < count; i++) {
-                            // Вдимам последното число, добавям го на 0 индекс и премахвам последния
+                            // Взимам последното число, добавям го на 0 индекс и премахвам последния
                             int lastNum = numList.get(numList.size() - 1);
                             numList.add(0, lastNum);
                             numList.remove(numList.size() - 1);
