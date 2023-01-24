@@ -1,5 +1,4 @@
 4. Password Validator
-
 Write a program that checks if a given password is valid. Password rules are:
 6 – 10 characters (inclusive);
 Consists only of letters and digits;

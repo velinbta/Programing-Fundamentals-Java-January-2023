@@ -28,7 +28,6 @@ Output 1:
     last comment
 </div>
 
-
 Input 2:
 The Reckoning
 John Grishams The Reckoning is the master storytellers most powerful, surprising, and accomplished novel yet.
