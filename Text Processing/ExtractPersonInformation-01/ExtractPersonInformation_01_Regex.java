@@ -1,4 +1,4 @@
-package TextProcessingMoreExercises;
+package TextProcessing;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -9,7 +9,8 @@ public class ExtractPersonInformation_01_Regex {
         Scanner scanner = new Scanner(System.in);
         // Броя на редовете
         int lines = Integer.parseInt(scanner.nextLine());
-        // Регулярни изрази да името и за възрастта
+
+        // Регулярни изрази за името и за възрастта
         String nameRegex = "@(?<name>[A-Za-z]+)\\|";
         String ageRegex = "#(?<age>\\d+)\\*";
 
@@ -35,6 +36,6 @@ public class ExtractPersonInformation_01_Regex {
 
         }
 
-
     }
+
 }

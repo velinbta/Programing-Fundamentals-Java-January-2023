@@ -1,4 +1,4 @@
-package TextProcessingExercises;
+package TextProcessing;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -31,21 +31,30 @@ public class LettersChangeNumbers_08 {
             double result = 0.0;
             // Първата буква (e.g P34562Z -> P)
             if (Character.isUpperCase(beforeLetter)) {
+
                 // Ако е с голяма буква умножавам числото (e.g 34562) по позицията
                 result = (numberBetween * 1.0) / positionBeforeLetter;
+
             } else {
+
                 // Ако е с малка буква деля (e.g 34562) на позицията
                 result = (numberBetween * 1.0) * positionBeforeLetter;
+
             }
 
             // Последната буква (e.g P34562Z -> Z)
             if (Character.isUpperCase(afterLetter)) {
+
                 // Ако е голяма изваждам получената позиция от азбуката
                 result -= positionAfterLetter;
+
             } else {
+
                 // Ако е малка - събирам
                 result += positionAfterLetter;
+
             }
+
             // Добавям към крайния резултат
             finalResult += result;
 

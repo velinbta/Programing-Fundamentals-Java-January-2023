@@ -1,4 +1,4 @@
-package TextProcessingMoreExercises;
+package TextProcessing;
 
 import java.util.Scanner;
 
@@ -19,16 +19,18 @@ public class HTML_05 {
         htmlBuild.append("<article>\n").append("\t").append(content).append("\n</article>\n");
 
         String comment = scanner.nextLine();
-        // За comment, докато не получа "end of comments" - добавям по същата схема
 
+        // За comment, докато не получа "end of comments" - добавям по същата схема
         while (!comment.equals("end of comments")) {
 
             htmlBuild.append("<div>\n").append("\t").append(comment).append("\n</div>\n");
 
             comment = scanner.nextLine();
+
         }
 
         System.out.print(htmlBuild);
 
     }
+
 }

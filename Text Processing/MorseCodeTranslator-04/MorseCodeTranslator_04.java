@@ -1,4 +1,4 @@
-package TextProcessingMoreExercises;
+package TextProcessing;
 
 import java.util.Scanner;
 
@@ -106,5 +106,7 @@ public class MorseCodeTranslator_04 {
             }
 
         }
+
     }
+
 }

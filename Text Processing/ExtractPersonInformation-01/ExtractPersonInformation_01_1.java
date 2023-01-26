@@ -1,4 +1,4 @@
-package TextProcessingMoreExercises;
+package TextProcessing;
 
 import java.util.Scanner;
 
@@ -26,4 +26,5 @@ public class ExtractPersonInformation_01_1 {
         }
 
     }
+
 }
