@@ -8,6 +8,7 @@ public class CommonElements_02 {
         // Прочитам два масива от конзолата
         String[] firstArr = scanner.nextLine().split("\\s+");
         String[] secondArr = scanner.nextLine().split("\\s+");
+
         // Понеже по условие, трябва да се проверят общите от втория с първия,
         // започвам от втория
         for (String sec : secondArr) {
@@ -24,6 +25,6 @@ public class CommonElements_02 {
 
         }
 
-
     }
+
 }

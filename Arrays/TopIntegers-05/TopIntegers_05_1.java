@@ -3,7 +3,7 @@ package ArraysExercises;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TopIntegers_05 {
+public class TopIntegers_05_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,6 +12,7 @@ public class TopIntegers_05 {
                 .stream(scanner.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
+
         // Итетирам по дължината
         for (int i = 0; i < numArr.length; i++) {
 
@@ -37,4 +38,5 @@ public class TopIntegers_05 {
         }
 
     }
+
 }
