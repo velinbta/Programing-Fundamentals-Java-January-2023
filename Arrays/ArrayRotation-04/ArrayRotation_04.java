@@ -2,7 +2,7 @@ package ArraysExercises;
 
 import java.util.Scanner;
 
-public class ArrayRotation_04_2_For {
+public class ArrayRotation_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам масива от конзолата
@@ -24,8 +24,6 @@ public class ArrayRotation_04_2_For {
             }
 
         }
-        // Алтернативен начин за принтиране на String:
-        //        System.out.println(String.join(" ", arr));
 
         for (String j : arr) {
 
@@ -34,4 +32,5 @@ public class ArrayRotation_04_2_For {
         }
 
     }
+
 }
