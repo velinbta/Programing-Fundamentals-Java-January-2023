@@ -1,4 +1,4 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,6 +20,7 @@ public class StarEnigma_04 {
             String message = scanner.nextLine(); // Получавам съобщението
             // Използвам метод, който ми взима [s, t, a, r] - големи и малки букви, използвайки регекс
             // и получавам число, с което ще намалям всеки символ - ASCII кода на полученото съобщение
+
             int count = countLettersSTARstar(message);
             // Намалям, дешифрирам полученото съобщение
             String decryptedMessage = getCharsDowngradedByCountReq(message, count);
@@ -39,6 +40,7 @@ public class StarEnigma_04 {
             Matcher planetMatcher = planetPattern.matcher(current);
 
             if (planetMatcher.find()) {
+
                 // Ако е валидно, добавям в списъци в зависимост от буквата / А / D
                 String planetName = planetMatcher.group("planetName");
                 String attackType = planetMatcher.group("attackType");
@@ -52,15 +54,16 @@ public class StarEnigma_04 {
             }
 
         }
+
         // Сортирам ги по азбучен ред
         Collections.sort(attackedList);
         Collections.sort(destroyedList);
+
         // Принтирам атакуваните и унищожени планети
         System.out.printf("Attacked planets: %d%n", attackedList.size());
         attackedList.forEach(e -> System.out.println("->" + " " + e));
         System.out.printf("Destroyed planets: %d%n", destroyedList.size());
         destroyedList.forEach(e -> System.out.println("->" + " " + e));
-
 
     }
 
@@ -77,9 +80,11 @@ public class StarEnigma_04 {
 
             char decryptedChar = (char) (current - count);
             decrypted.append(decryptedChar);
+
         }
 
         return decrypted.toString();
+
     }
 
 }

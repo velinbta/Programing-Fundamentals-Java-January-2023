@@ -1,11 +1,11 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class Race_02_4_USINGSORT {
+public class Race_02_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -42,13 +42,13 @@ public class Race_02_4_USINGSORT {
 
 
             if (nameKmMap.containsKey(name.toString())) { // Само, ако във вече налятия Map се съдържа името
-                // Добавям допълнително км
 
+                // Добавям допълнително км
                 nameKmMap.put(name.toString(), nameKmMap.get(name.toString()) + km);
             }
 
-
             input = scanner.nextLine();
+
         }
 
         List<String> top3Players = nameKmMap.entrySet().stream() // Пускам stream по map
@@ -63,6 +63,6 @@ public class Race_02_4_USINGSORT {
         System.out.println("2nd place: " + top3Players.get(1));
         System.out.println("3rd place: " + top3Players.get(2));
 
-
     }
+
 }

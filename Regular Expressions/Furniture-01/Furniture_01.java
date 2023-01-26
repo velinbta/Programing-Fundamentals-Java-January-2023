@@ -1,4 +1,4 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Furniture_01_3 {
+public class Furniture_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // ">>{furniture name}<<{price}!{quantity}"
@@ -22,6 +22,7 @@ public class Furniture_01_3 {
             Matcher furnitureMatcher = furniturePattern.matcher(furniture);
 
             if (furnitureMatcher.find()) {
+
              // Докато намира, добавям мебелите в списък и пресмятам цената - сумата по количеството
              furnitureList.add(furnitureMatcher.group("furnitureName"));
              double price = Double.parseDouble(furnitureMatcher.group("price"));
@@ -31,6 +32,7 @@ public class Furniture_01_3 {
             }
 
             furniture = scanner.nextLine();
+
         }
 
 
@@ -39,4 +41,5 @@ public class Furniture_01_3 {
         System.out.printf("Total money spend: %.2f%n", sumTotal); // Общата цена
 
     }
+
 }

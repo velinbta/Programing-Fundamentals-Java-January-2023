@@ -1,9 +1,9 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Race_02 {
+public class Race_02_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,14 +17,19 @@ public class Race_02 {
 
         StringBuilder name = new StringBuilder();
         int km = 0; // Общите километри
+
         for (char current: info.toCharArray()) {
+
             if (Character.isLetter(current)) {
                 // Взимам само буквите
                 name.append(current);
+
             } else if (Character.isDigit(current)) {
                 // Взимам само отделните цифри и ги сумирам
                 km += Character.getNumericValue(current);
+
             }
+
         }
 
         if (participantList.contains(name.toString())) {
@@ -43,11 +48,11 @@ public class Race_02 {
         winnerArr[0] = getNameBasedOnGreatestValue(nameKmMap);
         winnerArr[1] = getNameBasedOnGreatestValue(nameKmMap);
         winnerArr[2] = getNameBasedOnGreatestValue(nameKmMap);
+
         // Принтирам първите 3 места
         System.out.printf("1st place: %s%n",winnerArr[0]);
         System.out.printf("2nd place: %s%n",winnerArr[1]);
         System.out.printf("3rd place: %s%n",winnerArr[2]);
-
 
     }
 
@@ -55,18 +60,21 @@ public class Race_02 {
 
         String name = "";
         int max = Integer.MIN_VALUE;
-
         for (Map.Entry<String, Integer> entry: nameKmMap.entrySet()) {
 
             if (entry.getValue() > max) {
+
                 max = entry.getValue();
                 name = entry.getKey();
+
             }
 
         }
+
         nameKmMap.remove(name);
 
         return name;
+
     }
 
 }

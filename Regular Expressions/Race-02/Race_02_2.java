@@ -1,11 +1,11 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class Race_02_3 {
+public class Race_02_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -29,6 +29,7 @@ public class Race_02_3 {
             Matcher digitMatcher = digitPattern.matcher(input);
 
             StringBuilder name = new StringBuilder(); // Тук получавам извлеченото име
+
             while (nameMatcher.find()) {
 
                 name.append(nameMatcher.group());
@@ -76,10 +77,11 @@ public class Race_02_3 {
               }
 
         }
+
         nameKmMap.remove(value);
 
         return value;
-    }
 
+    }
 
 }

@@ -1,4 +1,4 @@
-package RegularExpressionsExercises;
+package RegularExpressions;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,8 +18,10 @@ public class NetherRealms_05 {
             // Използвам метод да ми събере сбора на ASCII символите:
             // health се получава от сбор на символи освен - '+', '-', '*', '/' , '.' и [0-9];
             int health = getHealthByAddingChars(demon);
+
             // Събирам числата като взимам предвид и знаците - / +, ако има
             double summedUp = getFloatingPointsSummedUpInString(demon);
+
             // Според символите накрая, ги деля или умножавам по 2
             double damage = getSummedUpFloatingNumberDividedOrMultipliedBy2(demon, summedUp);
 
@@ -27,7 +29,6 @@ public class NetherRealms_05 {
             System.out.printf("%s - %d health, %.2f damage%n", demon, health, damage);
 
         }
-
 
     }
 
@@ -38,6 +39,7 @@ public class NetherRealms_05 {
         for (char current : demonSymbols.toCharArray()) {
 
             health += current;
+
         }
 
         return health;
@@ -59,23 +61,21 @@ public class NetherRealms_05 {
         return sum;
     }
 
-    private static double getSummedUpFloatingNumberDividedOrMultipliedBy2 (String demonName, double summedUp) {
+    private static double getSummedUpFloatingNumberDividedOrMultipliedBy2(String demonName, double summedUp) {
 
         double damage = summedUp;
         // Според символите накрая, деля или умножавам на 2
-        for (char current: demonName.toCharArray()) {
+        for (char current : demonName.toCharArray()) {
 
             if (current == '*') {
                 damage *= 2;
             } else if (current == '/') {
-               damage /= 2;
+                damage /= 2;
             }
 
         }
 
         return damage;
     }
-
-
 
 }
