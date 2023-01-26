@@ -1,11 +1,11 @@
-package ListLab;
+package List;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class GaussTrick_02 {
+public class GaussTrick_02_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // first + last, first + 1 + last - 1, first + 2 + last - 2, … first + n, last - n.

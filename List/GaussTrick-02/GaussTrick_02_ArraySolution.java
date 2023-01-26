@@ -1,9 +1,9 @@
-package ArraysListsLabToArray;
+package List;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class GaussTrick_02 {
+public class GaussTrick_02_ArraySolution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // first + last, first + 1 + last - 1, first + 2 + last - 2, … first + n, last - n.
@@ -25,7 +25,6 @@ public class GaussTrick_02 {
 
         }
 
-
         int[] secondArr = new int[secondArrLength];
 
         for (int i = 0; i < secondArrLength; i++) {
@@ -43,16 +42,13 @@ public class GaussTrick_02 {
             // Сбор на първия и последен, като последния върви с едно назад, на всяка итерация
             secondArr[i] = product;
 
-
         }
-
 
         for (int i = 0; i < secondArr.length; i++) {
 
             System.out.print(secondArr[i] + " ");
 
         }
-
 
     }
 

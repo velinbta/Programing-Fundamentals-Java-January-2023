@@ -1,4 +1,4 @@
-package ListLab;
+package List;
 
 import java.util.Arrays;
 import java.util.List;
@@ -130,4 +130,5 @@ public class ListManipulationAdvanced_05 {
         }
 
     }
+
 }
