@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class CardsGame_06_2 {
+public class CardsGame_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам два листа - картите на първия и втория играч
