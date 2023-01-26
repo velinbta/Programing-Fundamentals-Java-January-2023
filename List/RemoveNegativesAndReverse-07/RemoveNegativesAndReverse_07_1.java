@@ -1,11 +1,11 @@
-package ListLab;
+package List;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class RemoveNegativesAndReverse_07 {
+public class RemoveNegativesAndReverse_07_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // По условие се премахват, но в това решение предлагам:
@@ -33,4 +33,5 @@ public class RemoveNegativesAndReverse_07 {
         }
 
     }
+
 }

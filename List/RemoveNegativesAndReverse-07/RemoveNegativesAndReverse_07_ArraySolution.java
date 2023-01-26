@@ -1,9 +1,9 @@
-package ArraysListsLabToArray;
+package List;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RemoveNegativesAndReverse_07 {
+public class RemoveNegativesAndReverse_07_ArraySolution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

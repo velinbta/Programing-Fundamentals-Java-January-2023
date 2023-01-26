@@ -1,4 +1,4 @@
-package ListLab;
+package List;
 
 import java.util.Arrays;
 import java.util.List;
@@ -39,4 +39,5 @@ public class RemoveNegativesAndReverse_07_2 {
         }
 
     }
+
 }
