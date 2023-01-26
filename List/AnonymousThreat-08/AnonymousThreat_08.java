@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class AnonymousThreat_08_4 {
+public class AnonymousThreat_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

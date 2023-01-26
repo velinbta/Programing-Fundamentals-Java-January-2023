@@ -9,7 +9,9 @@ import java.util.stream.Collectors;
 public class AppendArrays_07_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+/*
+1 || |||2   3 |4   5 6 | 7 8| -3 2   1||1 2|3|4|99 77
+*/
         List<String> inputList = Arrays.stream(scanner.nextLine().split("\\|"))
                 .collect(Collectors.toList()); // разделям стойностите по "|"
 
@@ -24,8 +26,6 @@ public class AppendArrays_07_1 {
         System.out.println(inputText);
 
     }
-/*
-1 || |||2   3 |4   5 6 | 7 8| -3 2   1||1 2|3|4|99 77
-*/
+
 }
 
