@@ -1,4 +1,4 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class MiddleCharacters_06_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Протичам текста, като масив от символи
+        // Прочитам текста, като масив от символи
         char[] chArr = scanner.nextLine().toCharArray();
 
         // Методът намира “средната или средните" букви

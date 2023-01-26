@@ -1,4 +1,4 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
@@ -28,4 +28,5 @@ public class SignOfInteger_01 {
         }
 
     }
+
 }

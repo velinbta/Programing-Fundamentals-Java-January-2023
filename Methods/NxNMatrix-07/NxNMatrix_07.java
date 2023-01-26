@@ -1,4 +1,4 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class NxNMatrix_07 {
     }
 
     public static void printEqualToNRowsAndColumns(int n) {
+
         // Два вложени цикъла за редовете и колоните
         for (int i = 0; i < n; i++) {
 
@@ -29,6 +30,5 @@ public class NxNMatrix_07 {
         }
 
     }
-
 
 }

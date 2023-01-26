@@ -1,4 +1,4 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
@@ -7,9 +7,13 @@ public class MultiplyEvenByOdds_10_2 {
         Scanner scanner = new Scanner(System.in);
 
         int integerNumber = Integer.parseInt(scanner.nextLine());
+        // Получавам сумата на четните числа
+        int evenSum = getEvenDigitSum(integerNumber);
+        // Получавам сумата на нечетните числа
+        int oddSum = getOddDigitsSum(integerNumber);
+        // Умножавам ги и получавам резултата
+        int result = evenSum * oddSum;
 
-        // Това е съвкупност от 3 метода:
-        int result = getMultipleOfEvenAndOddDigits(integerNumber);
         System.out.println(result);
 
     }
@@ -34,7 +38,6 @@ public class MultiplyEvenByOdds_10_2 {
 
         }
 
-
         return evenSum;
 
     }
@@ -52,7 +55,6 @@ public class MultiplyEvenByOdds_10_2 {
             if (digit % 2 != 0) {
 
                 oddSum = oddSum + digit;
-
             }
 
             // Махам последното число
@@ -62,15 +64,5 @@ public class MultiplyEvenByOdds_10_2 {
 
         return oddSum;
     }
-
-    public static int getMultipleOfEvenAndOddDigits(int integerNumber) {
-        // Умножава получената сума на четни и нечетни от предходните методи
-        int oddSum = getOddDigitsSum(integerNumber);
-        int evenSum = getEvenDigitSum(integerNumber);
-
-        return oddSum * evenSum;
-
-    }
-
 
 }

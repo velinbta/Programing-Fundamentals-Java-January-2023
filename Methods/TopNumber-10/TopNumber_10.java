@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class TopNumber_10_2 {
+public class TopNumber_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -57,6 +57,5 @@ public class TopNumber_10_2 {
         // Иначе връща false
         return false;
     }
-
 
 }

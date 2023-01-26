@@ -1,8 +1,8 @@
-package MethodsMoreExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class TribonacciSequence_04_3 {
+public class TribonacciSequence_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Дават ни 1 число, според което трябва да се удължи поредицата,
@@ -34,7 +34,6 @@ public class TribonacciSequence_04_3 {
 
         }
 
-
     }
 
     private static void printSequenceAccordingToNumberGivenButUpToThree(int number) {
@@ -54,6 +53,5 @@ public class TribonacciSequence_04_3 {
         }
 
     }
-
 
 }

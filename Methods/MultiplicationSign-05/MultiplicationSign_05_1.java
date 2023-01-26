@@ -1,11 +1,11 @@
-package MethodsMoreExercises;
+package Methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class MultiplicationSign_05 {
+public class MultiplicationSign_05_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам три числа
@@ -40,9 +40,13 @@ public class MultiplicationSign_05 {
         // Ако са 2 или пък са 0 - резултата от умножението ще е положителен
         // Във всички други случай (при три числа) - отрицателен
         if (positiveCount == 2 || positiveCount == 0) {
+
             return "positive";
+
         } else {
+
             return "negative";
+
         }
 
     }

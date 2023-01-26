@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class PalindromeIntegers_09 {
+public class PalindromeIntegers_09_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -24,7 +24,6 @@ public class PalindromeIntegers_09 {
             command = scanner.nextLine();
 
         }
-
 
     }
 

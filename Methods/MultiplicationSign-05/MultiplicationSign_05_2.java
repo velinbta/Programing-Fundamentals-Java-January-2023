@@ -1,4 +1,4 @@
-package MethodsMoreExercises;
+package Methods;
 
 import java.util.Scanner;
 
@@ -37,8 +37,11 @@ public class MultiplicationSign_05_2 {
         // Ако са 2 или пък са 0 - резултата от умножението ще е положителен
         // Във всички други случай (при три числа) - отрицателен
         if (positiveCount == 2 || positiveCount == 0) {
+
             return "positive";
+
         } else {
+
             return "negative";
 
         }

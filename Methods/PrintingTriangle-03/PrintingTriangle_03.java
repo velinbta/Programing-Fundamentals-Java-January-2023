@@ -1,8 +1,8 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
-public class PrintingTriangle_03_02 {
+public class PrintingTriangle_03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -40,6 +40,5 @@ public class PrintingTriangle_03_02 {
         System.out.println();
 
     }
-
 
 }

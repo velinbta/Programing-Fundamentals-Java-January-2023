@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class MiddleCharacters_06 {
+public class MiddleCharacters_06_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -30,6 +30,5 @@ public class MiddleCharacters_06 {
         }
 
     }
-
 
 }

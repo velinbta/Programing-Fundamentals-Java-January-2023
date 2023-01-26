@@ -1,4 +1,4 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
@@ -10,9 +10,9 @@ public class RepeatString_07_StringBuilder {
         int repetitionsCount = Integer.parseInt(scanner.nextLine());
 
         // Методът конкатенира текста, брой задедени пъти
-        String concatInput = getInputConcatenatedRepetitionsCountTimes(input, repetitionsCount);
+        String concatenatedInput = getInputConcatenatedRepetitionsCountTimes(input, repetitionsCount);
 
-        System.out.println(concatInput);
+        System.out.println(concatenatedInput);
 
     }
 

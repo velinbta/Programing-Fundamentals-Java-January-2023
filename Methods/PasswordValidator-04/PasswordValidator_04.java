@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class PasswordValidator_04_3 {
+public class PasswordValidator_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам паролата като масив от символи
@@ -70,4 +70,5 @@ public class PasswordValidator_04_3 {
 
         return digitsCount >= 2;
     }
+
 }
