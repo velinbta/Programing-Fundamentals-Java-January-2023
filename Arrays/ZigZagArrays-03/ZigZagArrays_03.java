@@ -22,6 +22,7 @@ public class ZigZagArrays_03 {
             // На четна итерация, добавям към първия масив - първото число, към втория - второто
             // на нечетна - обратното
             if (i % 2 == 0) {
+
                 firstArr[i] = firstNumber;
                 secondArr[i] = secondNumber;
 
@@ -34,21 +35,11 @@ public class ZigZagArrays_03 {
 
         }
 
-        for (int j : firstArr) {
 
-            System.out.print(j + " ");
-        }
-
-        System.out.println();
-
-        for (int j : secondArr) {
-
-            System.out.print(j + " ");
-        }
-        // Алтернативен начин на принтиране:
-//        System.out.println(Arrays.toString(Arrays.stream(firstArr).toArray()).replaceAll("[\\[\\],]", ""));
-//        System.out.println(Arrays.toString(Arrays.stream(secondArr).toArray()).replaceAll("[\\[\\],]", ""));
+        System.out.println(Arrays.toString(Arrays.stream(firstArr).toArray()).replaceAll("[\\[\\],]", ""));
+        System.out.println(Arrays.toString(Arrays.stream(secondArr).toArray()).replaceAll("[\\[\\],]", ""));
 
 
     }
+
 }
