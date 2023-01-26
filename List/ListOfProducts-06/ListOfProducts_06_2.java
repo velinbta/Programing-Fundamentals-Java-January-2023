@@ -1,9 +1,9 @@
-package ListLab;
+package List;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ListOfProducts_06_4 {
+public class ListOfProducts_06_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -27,4 +27,5 @@ public class ListOfProducts_06_4 {
         }
 
     }
+
 }

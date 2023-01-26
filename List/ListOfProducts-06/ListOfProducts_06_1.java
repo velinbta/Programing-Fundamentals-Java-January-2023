@@ -1,8 +1,8 @@
-package ListLab;
+package List;
 
 import java.util.*;
 
-public class ListOfProducts_06 {
+public class ListOfProducts_06_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам броя редове и добавям продуктите в списъка
