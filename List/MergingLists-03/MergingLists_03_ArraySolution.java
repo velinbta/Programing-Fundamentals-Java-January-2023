@@ -1,8 +1,8 @@
-package ArraysListsLabToArray;
+package List;
 
 import java.util.Scanner;
 
-public class MergingLists_03 {
+public class MergingLists_03_ArraySolution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам два масива

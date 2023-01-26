@@ -1,4 +1,4 @@
-package ListLab;
+package List;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -53,4 +53,5 @@ public class MergingLists_03_1 {
         finalList.forEach(e -> System.out.print(e + " "));
 
     }
+
 }

@@ -1,11 +1,11 @@
-package ListExercises;
+package List;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class PokemonDontGo_09_03 {
+public class PokemonDontGo_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -71,4 +71,5 @@ public class PokemonDontGo_09_03 {
         }
 
     }
+
 }

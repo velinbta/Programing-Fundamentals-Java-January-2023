@@ -1,4 +1,4 @@
-package ListLab;
+package List;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class MergingLists_03_4 {
+public class MergingLists_03_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // От кондолата се четат два списъка
@@ -49,4 +49,5 @@ public class MergingLists_03_4 {
         resultList.forEach(e -> System.out.print(e + " "));
 
     }
+
 }
