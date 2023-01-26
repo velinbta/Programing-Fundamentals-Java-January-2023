@@ -1,10 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class VowelsCount_02_6 {
+public class VowelsCount_02_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

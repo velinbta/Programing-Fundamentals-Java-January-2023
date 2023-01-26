@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class VowelsCount_02_2 {
+public class VowelsCount_02_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -34,4 +34,5 @@ public class VowelsCount_02_2 {
         System.out.println(vowelsCount);
 
     }
+
 }
