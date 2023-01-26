@@ -1,4 +1,4 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
@@ -41,4 +41,5 @@ public class MathOperations_11_2 {
         return result;
 
     }
+
 }

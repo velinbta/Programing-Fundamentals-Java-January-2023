@@ -1,8 +1,8 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
-public class GreaterOfTwoValues_09_2 {
+public class GreaterOfTwoValues_09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,18 +12,21 @@ public class GreaterOfTwoValues_09_2 {
         switch (type) {
             // Внимание се обръща на подходящия метод за променливите:
             case "int":
+
                 int firstInt = Integer.parseInt(scanner.nextLine());
                 int secondInt = Integer.parseInt(scanner.nextLine());
                 System.out.println(getMax(firstInt, secondInt));
 
                 break;
             case "char":
+
                 char firstChar = scanner.nextLine().charAt(0);
                 char secondChar = scanner.nextLine().charAt(0);
                 System.out.println(getMax(firstChar, secondChar));
 
                 break;
             case "string":
+
                 String firstString = scanner.nextLine();
                 String secondString = scanner.nextLine();
                 System.out.println(getMax(firstString, secondString));

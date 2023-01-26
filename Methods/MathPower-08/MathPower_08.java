@@ -1,9 +1,9 @@
-package MethodsLab;
+package Methods;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class MathPower_08_02 {
+public class MathPower_08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,4 +31,5 @@ public class MathPower_08_02 {
 
         return powerOf;
     }
+
 }

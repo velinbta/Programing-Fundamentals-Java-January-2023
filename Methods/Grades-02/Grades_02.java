@@ -1,4 +1,4 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
@@ -31,6 +31,5 @@ public class Grades_02 {
         }
 
     }
-
 
 }

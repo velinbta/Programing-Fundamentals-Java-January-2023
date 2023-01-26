@@ -1,8 +1,8 @@
-package MethodsLab;
+package Methods;
 
 import java.util.Scanner;
 
-public class CalculateRectangleArea_06_2 {
+public class CalculateRectangleArea_06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам ширина и дължина
@@ -21,4 +21,5 @@ public class CalculateRectangleArea_06_2 {
         return width * length;
         
     }
+
 }

@@ -1,8 +1,8 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class FactorialDivision_08_02 {
+public class FactorialDivision_08_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -34,6 +34,5 @@ public class FactorialDivision_08_02 {
         return result;
 
     }
-
 
 }

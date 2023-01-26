@@ -1,8 +1,8 @@
-package MethodsMoreExercises;
+package Methods;
 
 import java.util.Scanner;
 
-public class DataTypes_01_2 {
+public class DataTypes_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Получавам типа на данните на следващия ред

@@ -1,4 +1,4 @@
-package MethodsExercises;
+package Methods;
 
 import java.util.Scanner;
 
@@ -29,7 +29,6 @@ public class AddAndSubtract_05 {
         return getTheSumOfTwoIntegers(a, b) - c;
 
     }
-
 
 }
 
