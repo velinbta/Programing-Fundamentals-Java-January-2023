@@ -1,4 +1,4 @@
-package ListExercises.AppendArrays;
+package List;
 
 import java.util.Arrays;
 import java.util.Collections;
