@@ -1,4 +1,4 @@
-package ArraysExercises;
+package Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -35,10 +35,8 @@ public class ZigZagArrays_03 {
 
         }
 
-
         System.out.println(Arrays.toString(Arrays.stream(firstArr).toArray()).replaceAll("[\\[\\],]", ""));
         System.out.println(Arrays.toString(Arrays.stream(secondArr).toArray()).replaceAll("[\\[\\],]", ""));
-
 
     }
 

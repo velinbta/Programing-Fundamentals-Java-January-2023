@@ -9,15 +9,15 @@ public class CommonElements_02 {
         String[] firstArr = scanner.nextLine().split("\\s+");
         String[] secondArr = scanner.nextLine().split("\\s+");
 
-        // Понеже по условие, трябва да се проверят общите от втория с първия,
-        // започвам от втория
-        for (String sec : secondArr) {
+        // Понеже по условие, трябва да се проверят общите елементи
+        // от втория с първия, започвам от втория
+        for (String second : secondArr) {
 
-            for (String fir : firstArr) {
+            for (String first : firstArr) {
 
-                if (sec.equals(fir)) {
+                if (second.equals(first)) {
                     // Принтирам само ако са еднакви
-                    System.out.printf("%s ", sec);
+                    System.out.printf("%s ", second);
 
                 }
 

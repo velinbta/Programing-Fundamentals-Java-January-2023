@@ -1,4 +1,4 @@
-package ArraysExercises;
+package Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class TopIntegers_05_2 {
             // Ако няма по голямо число твърдение остава вярно и принтирам
             boolean hasNoBigger = true;
 
-            // Започнам от където е стигнал i до предпоследния елемент, понете взимам един повече в цикъла
+            // Започнам от където е стигнал i до предпоследния елемент, понеже взимам един повече в цикъла
             // Не влкючвам последния елемент и той си остава top
             for (int j = i; j < numArr.length - 1; j++) {
 
@@ -44,7 +44,6 @@ public class TopIntegers_05_2 {
             }
 
         }
-
 
     }
 

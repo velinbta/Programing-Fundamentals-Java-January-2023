@@ -10,9 +10,9 @@ public class ArrayRotation_04 {
 
         int rotations = Integer.parseInt(scanner.nextLine()); // Брой ротации
 
-        for (int i = 0; i < rotations; i++) { // За всяка една ротация
+        for (int i = 0; i < rotations; i++) {
 
-            for (int j = 0; j < arr.length; j++) { // Итерирам дължината на масива
+            for (int j = 0; j < arr.length; j++) {
                 // Взимам последния елемент - да не се загуби
                 // Слагам му и "- j", защото искам да го измествам с всяка една итерация на цикъла,
                 // като започвам от последния и стигам до първия
