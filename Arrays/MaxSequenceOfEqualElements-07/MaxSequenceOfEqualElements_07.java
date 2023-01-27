@@ -11,7 +11,7 @@ public class MaxSequenceOfEqualElements_07 {
                 .mapToInt(e -> Integer.parseInt(e)).toArray();
 
         int totalCount = 0;
-        int maxRepeatedLeftMostElement = 0; // Елемента, който ще се повтори най-много пъти
+        int maxRepeatedLeftMostElement = 0; // Елементът, който ще се повтори най-много пъти
 
         // Обхождам дължината
         for (int i = 0; i < numArr.length; i++) {
