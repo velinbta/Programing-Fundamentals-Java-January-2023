@@ -1,5 +1,5 @@
 10. Top Number
-Read an integer n from the console. Find all top numbers in the range [1 … n] and print them. A top number holds the following properties:
+Read an integer n from the console. Find all top numbers in the range [1 .... n] and print them. A top number holds the following properties:
 
 * Its sum of digits is divisible by 8, e.g. 8, 16, 88.
 

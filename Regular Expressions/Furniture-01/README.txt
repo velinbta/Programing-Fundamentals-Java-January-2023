@@ -8,7 +8,7 @@ The price can be a floating-point number or a whole number. Store the names of t
 "Bought furniture:
 {1st name}
 {2nd name}
-…"
+..."
 
 And on the last line print, the following: "Total money spend: {spend money}" formatted to the second decimal point.
 

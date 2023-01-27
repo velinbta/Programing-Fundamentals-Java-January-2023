@@ -10,7 +10,7 @@ The sum of all numbers in his name forms his base damage. Note that you should c
 So, multiplication and division are applied only after all numbers are included in the calculation and the order, they appear in the name.
 
 Input
-The input will be read from the console. The input consists of a single line containing all demon names separated by commas and zero or more spaces in the format: "{demon name}, {demon name}, … {demon name}"
+The input will be read from the console. The input consists of a single line containing all demon names separated by commas and zero or more spaces in the format: "{demon name}, {demon name}, .... {demon name}"
 
 Output
 Print all demons, each on a separate line in the format:
