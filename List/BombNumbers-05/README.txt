@@ -31,7 +31,7 @@ Output 3:
 6
 
 Comment 3:
-Detonations are performed from left to right. We could not detonate the second occurrence of 7 because it’s already destroyed by the first occurrence. The numbers [1, 2, 3] survive. Their sum is 6.
+Detonations are performed from left to right. We could not detonate the second occurrence of 7 because it is already destroyed by the first occurrence. The numbers [1, 2, 3] survive. Their sum is 6.
 
 Input 4:
 1 1 2 1 1 1 2 1 1 1
