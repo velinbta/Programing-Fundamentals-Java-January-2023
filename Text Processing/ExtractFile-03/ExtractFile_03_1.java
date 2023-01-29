@@ -9,13 +9,12 @@ public class ExtractFile_03_1 {
         // Прочитам текста, като масив и го разделям по '\' и '.'
         String[] strArr = scanner.nextLine().split("[\\\\.]");
 
-        // Предпоследния елемент е фейлът, а последния разширението
+        // Предпоследният елемент е файлът, а последният е разширението
         String name = strArr[strArr.length - 2];
         String extension = strArr[strArr.length - 1];
 
         System.out.printf("File name: %s%n", name);
         System.out.printf("File extension: %s%n", extension);
-
 
     }
 
