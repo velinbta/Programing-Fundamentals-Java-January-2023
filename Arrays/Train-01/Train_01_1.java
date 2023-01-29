@@ -2,13 +2,13 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class Train_01 {
+public class Train_01_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int n = Integer.parseInt(scanner.nextLine()); // Брой на вагоните
+        int wagonCount = Integer.parseInt(scanner.nextLine()); // Брой на вагоните
 
-        int[] passengersArr = new int[n];
+        int[] passengersArr = new int[wagonCount];
 
         for (int i = 0; i < passengersArr.length; i++) {
 
