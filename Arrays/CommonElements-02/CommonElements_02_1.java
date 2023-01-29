@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class CommonElements_02 {
+public class CommonElements_02_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам два масива от конзолата
