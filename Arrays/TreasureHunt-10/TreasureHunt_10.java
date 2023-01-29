@@ -111,7 +111,7 @@ public class TreasureHunt_10 {
                         // Презаписвам и основния масив
                         treasureChestArr = tempChest;
 
-                        // В случай, че в масива няма да остане нищо - тоест ще откраднав всички елементи
+                        // В случай, че в масива няма да остане нищо - тоест ще откраднат всички елементи
                     } else if (mustStealItems > treasureChestArr.length - 1) {
 
                         for (int i = 0; i < treasureChestArr.length; i++) {
