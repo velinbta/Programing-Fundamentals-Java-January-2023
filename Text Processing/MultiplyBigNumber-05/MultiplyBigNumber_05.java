@@ -54,6 +54,7 @@ public class MultiplyBigNumber_05 {
                 // Взимам му последната цифра и я добавям
                 int digit = result % 10;
                 buildNumber.append(digit);
+
                 int lastToAppend = result / 10; // Това е последния остатък
                 // Добавям го само, ако е различен от 0, защото числото не може да започне с 0
                 if (lastToAppend != 0) {
