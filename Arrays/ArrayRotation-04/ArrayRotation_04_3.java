@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ArrayRotation_04_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        // Прочитам String променлива и брой ротации
         String input = scanner.nextLine();
         int numberOfRotations = Integer.parseInt(scanner.nextLine());
 
