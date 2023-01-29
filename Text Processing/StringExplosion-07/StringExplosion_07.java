@@ -14,18 +14,22 @@ public class StringExplosion_07 {
             char current = text.charAt(i); // текущият символ
 
             if (current == '>') {
+
                 // По условие веднага след '>', следва число, затова взимам следващия символ
                 // и го добавям към digit
                 int digitToAdd = Character.getNumericValue(text.charAt(i + 1));
                 digit += digitToAdd;
+
             }
 
             // Ако digit не ми е 0, и текущият символ не е '>'
             if (digit != 0 && current != '>') {
+
                 // Трия символа, намалям digit и итерацията на цикъла с 1
                 text.deleteCharAt(i);
                 i -= 1;
                 digit--;
+
             }
 
         }
