@@ -3,7 +3,7 @@ package Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TreasureHunt_10 {
+public class TreasureHunt_10_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
