@@ -8,10 +8,8 @@ public class TopIntegers_05_2 {
         Scanner scanner = new Scanner(System.in);
 
         // Прочитам масив от числа от конзолата
-        int[] numArr = Arrays
-                .stream(scanner.nextLine().split("\\s+"))
-                .mapToInt(Integer::parseInt)
-                .toArray();
+        int[] numArr = Arrays.stream(scanner.nextLine().split("\\s+"))
+                .mapToInt(Integer::parseInt).toArray();
 
         // В метод описвам, условията дали да принтира или не top Integer ->
         printIfLeftToRightIntegerHasNoGreaterInteger(numArr);
@@ -19,7 +17,6 @@ public class TopIntegers_05_2 {
     }
 
     public static void printIfLeftToRightIntegerHasNoGreaterInteger(int[] numArr) {
-
         // Итерирам по дължината на масива
         for (int i = 0; i < numArr.length; i++) {
             // Ако няма по голямо число твърдение остава вярно и принтирам
@@ -29,7 +26,10 @@ public class TopIntegers_05_2 {
             // Не влкючвам последния елемент и той си остава top
             for (int j = i; j < numArr.length - 1; j++) {
 
-                if (numArr[i] <= numArr[j + 1]) {
+                int firstElement = numArr[i];
+                int secondElement = numArr[j + 1];
+
+                if (firstElement <= secondElement) {
 
                     hasNoBigger = false;
                     break;
@@ -41,6 +41,7 @@ public class TopIntegers_05_2 {
             if (hasNoBigger) {
 
                 System.out.print(numArr[i] + " ");
+
             }
 
         }
