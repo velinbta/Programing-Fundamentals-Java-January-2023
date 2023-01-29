@@ -3,11 +3,12 @@ package Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ZigZagArrays_03 {
+public class ZigZagArrays_03_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int lines = Integer.parseInt(scanner.nextLine()); // Брой редове
+
         // Съзвадам два масива
         int[] firstArr = new int[lines];
         int[] secondArr = new int[lines];
