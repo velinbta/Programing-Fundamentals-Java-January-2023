@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class ArrayRotation_04 {
+public class ArrayRotation_04_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // Прочитам масива от конзолата
@@ -25,9 +25,9 @@ public class ArrayRotation_04 {
 
         }
 
-        for (String j : arr) {
+        for (String current : arr) {
 
-            System.out.print(j + " ");
+            System.out.print(current + " ");
 
         }
 
