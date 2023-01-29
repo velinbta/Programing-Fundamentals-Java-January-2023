@@ -17,14 +17,14 @@ public class MagicSum_08 {
 
             for (int j = i; j < numArr.length - 1; j++) {
                 // Проверявам всеки един елемент от основния цикъл с елемент напред - на вложения
-                int first = numArr[i];
-                int second = numArr[j + 1];
-                int sum = first + second;
+                int firstElement = numArr[i];
+                int secondElement = numArr[j + 1];
+                int sum = firstElement + secondElement;
 
                 // Ако сумата е равна на магическото число, се принтира двойката
                 if (sum == magicSum) {
 
-                    System.out.print(first + " " + second);
+                    System.out.print(firstElement + " " + secondElement);
                     System.out.println();
 
                 }
