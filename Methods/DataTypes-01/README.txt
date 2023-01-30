@@ -1,5 +1,4 @@
 1. Data Types
-
 Write a program that, depending on the first line of the input, reads an int, double, or string.
 
 If the data type is int, multiply the number by 2.
