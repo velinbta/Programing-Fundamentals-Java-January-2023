@@ -9,9 +9,24 @@ public class TheatrePromotion_07 {
         String typeOfDay = scanner.nextLine();  // Weekday   Weekend   Holiday
         short age = Short.parseShort(scanner.nextLine());
 
-        // Търся по деня от седмицата и задавам нова стойност на цената
-        // Ако възрастовата група не фигурира се принтира "Error!"
-        boolean isValid = true;
+        // Методът търси по деня от седмицата и задавам нова стойност на цената
+        // Ако възрастовата група не фигурира цената остава 0 и се принтира "Error!"
+        byte price = getPriceDependingOnTheDay(typeOfDay, age);
+
+        if (price != 0) {
+
+            System.out.printf("%d$%n", price);
+
+        } else {
+
+            System.out.println("Error!");
+
+        }
+
+    }
+
+    private static byte getPriceDependingOnTheDay(String typeOfDay, short age) {
+
         byte price = 0;
         switch (typeOfDay) {
             case "Weekday":
@@ -26,10 +41,6 @@ public class TheatrePromotion_07 {
                 } else if (age > 64 && age <= 122) {
 
                     price = 12;
-
-                } else {
-
-                    isValid = false;
 
                 }
 
@@ -46,10 +57,6 @@ public class TheatrePromotion_07 {
                 } else if (age > 64 && age <= 122) {
 
                     price = 15;
-
-                } else {
-
-                    isValid = false;
 
                 }
 
@@ -68,25 +75,13 @@ public class TheatrePromotion_07 {
                     price = 10;
 
 
-                } else {
-
-                    isValid = false;
-
                 }
 
                 break;
 
         }
 
-        if (isValid) {
-
-            System.out.printf("%d$%n", price);
-
-        } else {
-
-            System.out.println("Error!");
-
-        }
+        return price;
 
     }
 
