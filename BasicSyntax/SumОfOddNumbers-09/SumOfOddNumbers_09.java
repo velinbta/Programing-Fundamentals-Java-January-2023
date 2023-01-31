@@ -7,9 +7,10 @@ public class SumOfOddNumbers_09 {
         Scanner scanner = new Scanner(System.in);
 
         int oddNumbersToPrint = Integer.parseInt(scanner.nextLine()); //  <- Колко нечетни числа да се принтират
+        int iterations = oddNumbersToPrint * 2; // Брой итерации
 
         int sumOdd = 0; // Сумата на нечетните числа
-        for (int i = 1; i <= oddNumbersToPrint * 2; i++) {
+        for (int i = 1; i <= iterations; i++) {
 
             if (i % 2 != 0) {
 
