@@ -2,7 +2,7 @@ package DataTypesVariables;
 
 import java.util.Scanner;
 
-public class PrintPartOfTheASCIITable_05_1 {
+public class PrintPartOfTheASCIITable_05_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,19 +11,17 @@ public class PrintPartOfTheASCIITable_05_1 {
 
         if (indexStart <= indexEnd) { // Ако indexStart е по-малък -> пр. от 60 до 65
 
-            for (int i = indexStart; i <= indexEnd; i++) {
+            for (char i = (char) (indexStart); i <= indexEnd; i++) {
 
-                char currentSymbol = (char) i; // Каствам всяко i към char
-                System.out.print(currentSymbol + " ");
+                System.out.print(i + " ");
 
             }
 
         } else { // Ако indexStart е по-голям -> пр. от 65 до 60
 
-            for (int i = indexStart; i >= indexEnd; i--) {
+            for (char i = (char) (indexStart); i >= indexEnd; i--) {
 
-                char currentSymbol = (char) (i); // Каствам всяко i към char
-                System.out.print(currentSymbol + " ");
+                System.out.print(i + " ");
 
             }
 
