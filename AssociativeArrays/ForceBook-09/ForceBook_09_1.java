@@ -66,7 +66,7 @@ public class ForceBook_09_1 {
 
         for (Map.Entry<String, List<String>> entry : sideUserMap.entrySet()) {
 
-            if (entry.getValue().size() != 0) {// <- Ако размера на списъка не е 0 тоест не е празен
+            if (entry.getValue().size() != 0) { // <- Ако размера на списъка не е 0 тоест не е празен
 
                 System.out.printf("Side: %s, Members: %d\n", entry.getKey(), entry.getValue().size());
 

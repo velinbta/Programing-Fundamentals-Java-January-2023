@@ -67,7 +67,7 @@ public class ForceBook_09_2 {
         sideUserMap.entrySet().stream().filter(e -> e.getValue().size() > 0) // Ограничавам, да не принтирам празни списъци
                 .forEach(entry -> { // блок от код, който искам да се изпълни за всяко едно entry
                             System.out.printf("Side: %s, Members: %d\n", entry.getKey(), entry.getValue().size());
-                            entry.getValue().forEach(user -> System.out.println("! " + user));
+                            entry.getValue().forEach(user -> System.out.println("! " + user)); // <- forEach за всяка стойност
                         }
                 );
 
