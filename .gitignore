@@ -1,5 +1,6 @@
 
 out/
+test/
 .idea/
 .idea_modules/
 *.iml
