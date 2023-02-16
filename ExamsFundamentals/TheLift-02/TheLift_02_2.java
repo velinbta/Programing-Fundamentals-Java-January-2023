@@ -3,7 +3,7 @@ package ExamsFundamentals;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TheLift_02_1 {
+public class TheLift_02_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -22,21 +22,8 @@ public class TheLift_02_1 {
 
                 if (peopleWaiting <= 0) { // <- Ако не останат хора на опашката
 
-                    // Проверявам, дали същевременно лифтът е пълен
-                    boolean isFull = getIfLiftIsFull(liftArr);
-
-                    // Ако лифтът е пълен, принтирам само местата и напускам цялата програма
-                    if (isFull) {
-
-                        Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
-                        return;
-
-                    } else { // <- Ако има свободни места
-
-                        isPeopleWaiting = false; // <- Но не остават хора
-                        break;
-
-                    }
+                    isPeopleWaiting = false;
+                    break;
 
                 }
 
@@ -48,12 +35,19 @@ public class TheLift_02_1 {
 
         }
 
-        if (!isPeopleWaiting) {
+        // Проверявам дали има останали места
+        boolean isFull = getIfLiftIsFull(liftArr);
+
+        if (isFull && !isPeopleWaiting) { // <- Ако е пълен и същевременно няма чакащи хора
+
+            Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
+
+        } else if (!isPeopleWaiting) { // <- Ако има места, но няма хора
 
             System.out.println("The lift has empty spots!");
             Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
 
-        } else {
+        } else { // <- Няма места и има чакащи хора
 
             System.out.printf("There isn't enough space! %d people in a queue!\n", peopleWaiting);
             Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
