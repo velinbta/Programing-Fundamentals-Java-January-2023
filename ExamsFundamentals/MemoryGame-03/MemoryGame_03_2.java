@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class MemoryGame_03 {
+public class MemoryGame_03_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -29,9 +29,8 @@ public class MemoryGame_03 {
             int firstIndex = indexArr[0];
             int secondIndex = indexArr[1];
 
-            // При false, добавям елементите в средата на списъка
-            boolean isInvalid = firstIndex == secondIndex || firstIndex < 0 || secondIndex < 0
-                    || firstIndex > elementsList.size() - 1 || secondIndex > elementsList.size() - 1;
+            // При false, значи или е невалиден индексът или мами - добавям елементите в средата на списъка
+            boolean isInvalid = isInvalidIndexOrCheats(firstIndex, secondIndex, elementsList);
 
             if (isInvalid) {
 
@@ -50,12 +49,7 @@ public class MemoryGame_03 {
                     System.out.printf("Congrats! You have found matching elements - %s!\n"
                             , elementsList.get(firstIndex));
 
-                    // Намирам по-големия и по-малкия, за да премахна задължително по-големия първо
-                    int greatestIndexOfTwo = Math.max(firstIndex, secondIndex);
-                    int minorIndexOfTwo = Math.min(firstIndex, secondIndex);
-
-                    elementsList.remove(greatestIndexOfTwo); // Math.max(), Max.min()
-                    elementsList.remove(minorIndexOfTwo);
+                    elementsList.removeIf(e -> e.equals(firstElement)); // <- Премахвам двата еднакви елемента
 
                 } else { // <- Ако са различни
 
@@ -69,16 +63,23 @@ public class MemoryGame_03 {
 
         }
 
-        if (elementsList.isEmpty()) { // <- Ако не е празен списъка, преди команда "end", печели
+        if (!elementsList.isEmpty()) { // <- Ако списъкът Не е празен - губи
+
+            System.out.println("Sorry you lose :(");
+            elementsList.forEach(e -> System.out.print(e + " ")); // <- Оставащите елементи
+
+        } else { // <- Ако е празен, преди команда "end"
 
             System.out.printf("You have won in %d turns!\n", moves);
 
-        } else {
-
-            System.out.println("Sorry you lose :(");
-            elementsList.forEach(e -> System.out.print(e + " "));
-
         }
+
+    }
+
+    private static boolean isInvalidIndexOrCheats(int firstIndex, int secondIndex, List<String> elementsList) {
+
+        return (firstIndex == secondIndex || firstIndex < 0 || secondIndex < 0
+                || firstIndex > elementsList.size() - 1 || secondIndex > elementsList.size() - 1);
 
     }
 
