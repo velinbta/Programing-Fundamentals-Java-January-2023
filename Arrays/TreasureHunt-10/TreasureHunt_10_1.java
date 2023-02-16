@@ -27,22 +27,28 @@ public class TreasureHunt_10_1 {
                         boolean contains = false;
 
                         for (int j = 0; j < treasureChestArr.length; j++) {
+
                             String currentInputElement = inputArr[i];
                             String currentTreasureChestElement = treasureChestArr[j];
 
                             if (currentInputElement.equals(currentTreasureChestElement)) {
+
                                 contains = true;
                                 break;
+
                             }
 
                         }
 
                         if (!contains) {
+
                             // Ако не се съдържа, изваждам текущия масив, като String променлива
                             String currentChest = Arrays.toString(treasureChestArr).replaceAll("[\\[\\],]", "");
                             String currentElement = inputArr[i];
+
                             // Събирам в нова променлива текущия елемент и текущия масив
                             String newChest = currentElement + " " + currentChest;
+
                             // Презаписвам масива
                             treasureChestArr = newChest.split("\\s+");
 
@@ -141,16 +147,18 @@ public class TreasureHunt_10_1 {
 
         }
 
-        // Взимам буквите на всички елементи от масива
+        // Взимам символите на всички елементи от масива
         String treasureCharsOnly = Arrays.toString(treasureChestArr).replaceAll("[\\[\\], ]", "");
 
         if (treasureCharsOnly.length() != 0) {
-            // Изчислявам дължината на всички букви, разделено на дължината на самите елементи вътре в
+
+            // Изчислявам дължината на всички символи, разделено на дължината на самите елементи вътре в
             // основния масив - treasureChestArr
             double averageTreasureGain = (1.0 * treasureCharsOnly.length()) / treasureChestArr.length;
             System.out.printf("Average treasure gain: %.2f pirate credits.", averageTreasureGain);
 
         } else {
+
             // Ако буквите са 0
             System.out.println("Failed treasure hunt.");
 
