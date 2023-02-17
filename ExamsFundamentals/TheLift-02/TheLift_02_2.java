@@ -7,26 +7,33 @@ public class TheLift_02_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int peopleWaiting = Integer.parseInt(scanner.nextLine()); // <- Чакащи
+        int initialQueue = Integer.parseInt(scanner.nextLine());
 
         int[] liftArr = Arrays.stream(scanner.nextLine().split("\\s+"))
                 .mapToInt(e -> Integer.parseInt(e)).toArray();
 
+        int peopleWaiting = initialQueue; // <- Чакащи хора
         boolean isPeopleWaiting = true; // <- Дали има останали хора на опашката
         for (int i = 0; i < liftArr.length; i++) {
 
-            while (liftArr[i] < 4) { // <- Докато елементът на индекс "i" < 4, добавям хора
+            if (peopleWaiting > 0) { // <- Ако има чакащи хора
 
-                liftArr[i] = liftArr[i] + 1;
-                peopleWaiting--; // <- Съответно намалям от хората
+                while (liftArr[i] < 4) { // <- Докато елементът на индекс "i" < 4, добавям хора
 
-                if (peopleWaiting <= 0) { // <- Ако не останат хора на опашката
+                    liftArr[i] = liftArr[i] + 1;
+                    peopleWaiting--; // <- Съответно намалям от хората
 
-                    isPeopleWaiting = false;
-                    break;
+                    if (peopleWaiting <= 0) { // <- Ако не останат хора на опашката
+
+                        isPeopleWaiting = false;
+                        break;
+
+                    }
 
                 }
 
+            } else { // <- Ако няма чакащи хора
+                isPeopleWaiting = false;
             }
 
             if (!isPeopleWaiting) { // <- Прекратявам двата цикъла при false

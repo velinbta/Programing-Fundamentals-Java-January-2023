@@ -7,39 +7,47 @@ public class TheLift_02_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int peopleWaiting = Integer.parseInt(scanner.nextLine()); // <- Чакащи
+        int initialQueue = Integer.parseInt(scanner.nextLine());
 
         int[] liftArr = Arrays.stream(scanner.nextLine().split("\\s+"))
                 .mapToInt(e -> Integer.parseInt(e)).toArray();
 
+        int peopleWaiting = initialQueue; // <- Чакащи хора
         boolean isPeopleWaiting = true; // <- Дали има останали хора на опашката
         for (int i = 0; i < liftArr.length; i++) {
 
-            while (liftArr[i] < 4) { // <- Докато елементът на индекс "i" < 4, добавям хора
+            if (peopleWaiting > 0) { // <- Ако има чакащи хора
 
-                liftArr[i] = liftArr[i] + 1;
-                peopleWaiting--; // <- Съответно намалям от хората
+                while (liftArr[i] < 4) { // <- Докато елементът на индекс "i" < 4, добавям хора
 
-                if (peopleWaiting <= 0) { // <- Ако не останат хора на опашката
+                    liftArr[i] = liftArr[i] + 1;
+                    peopleWaiting--; // <- Съответно намалям от хората
 
-                    // Проверявам, дали същевременно лифтът е пълен
-                    boolean isFull = getIfLiftIsFull(liftArr);
+                    if (peopleWaiting <= 0) { // <- Ако не останат хора на опашката
 
-                    // Ако лифтът е пълен, принтирам само местата и напускам цялата програма
-                    if (isFull) {
+                        // Проверявам, дали същевременно лифтът е пълен
+                        boolean isFull = getIfLiftIsFull(liftArr);
 
-                        Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
-                        return;
+                        // Ако лифтът е пълен, принтирам само местата и напускам цялата програма
+                        if (isFull) {
 
-                    } else { // <- Ако има свободни места
+                            Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
+                            return;
 
-                        isPeopleWaiting = false; // <- Но не остават хора
-                        break;
+                        } else { // <- Ако има свободни места
+
+                            isPeopleWaiting = false; // <- Но не остават хора
+                            break;
+
+                        }
 
                     }
 
                 }
 
+
+            } else { // <- Ако няма чакащи хора
+                isPeopleWaiting = false;
             }
 
             if (!isPeopleWaiting) { // <- Прекратявам двата цикъла при false
@@ -59,7 +67,6 @@ public class TheLift_02_1 {
             Arrays.stream(liftArr).forEach(e -> System.out.print(e + " "));
 
         }
-
 
     }
 
